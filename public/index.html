@@ -5,27 +5,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Animal Crossing - Turnip Prophet</title>
-  <meta name="description" content="Animal Crossing - Turnip Prophet">
-  <meta name="author" content="Mike Bryant">
+  <title>Animal Crossing - Turnip Army</title>
+  <meta name="description" content="Animal Crossing - Turnip Army">
+  <meta name="author" content="Lennon Acosta">
 
   <link rel="stylesheet" href="css/styles.css">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162470902-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-162470902-1');
-  </script>
-
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/7.14.0/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/7.14.0/firebase-auth.js"></script>
+  <script defer src="/__/firebase/7.14.0/firebase-database.js"></script>
+  <script defer src="/__/firebase/7.14.0/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/7.14.0/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
 </head>
-
 
 <body>
 
@@ -276,19 +271,28 @@
   <div class="dialog-box">
     <h2 class="dialog-box__name">Daisy Mae</h2>
     <p>
+      This is a team focused fork of Mike Bryant's <a href="https://turnipprophet.io/">Turnip Prophet</a>. Thanks for laying the groundwork! 
+    </p>
+    <p>
       None of this would have been possible without <a
         href="https://twitter.com/_Ninji/status/1244818665851289602?s=20">Ninji's work</a> figuring out just how Timmy
       and Tommy value their turnips.
     </p>
     <p>
       Support, comments and contributions are available through <a
-        href="https://github.com/mikebryant/ac-nh-turnip-prices/issues">Github</a>
+        href="https://github.com/mikebryant/turnip-army/issues">Github</a>
     </p>
+  </div>
+
+  <div class="dialog-box">
+    <h2 class="dialog-box__name">Mr. Resetti</h2>
+     <p id="firebase-load">Firebase SDK Loading&hellip;</p>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="js/predictions.js"></script>
   <script src="js/scripts.js"></script>
+  <script src="js/turnipArmy.js"></script>
 </body>
 
 </html>

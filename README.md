@@ -1,6 +1,8 @@
 # turnip-army
-A team based turnip price predictor for Animal Crossing.
+https://turnip.army/
 
-Based on the great work done by Mike Bryant and Ninji.
+A team based turnip price predictor for Animal Crossing. Mostly built as an excuse to play around with Google Firebase.
 
-https://github.com/mikebryant/ac-nh-turnip-prices
+From from Mike Bryant's Turnip Prophet: https://github.com/mikebryant/ac-nh-turnip-prices
+
+Based on the great work done by Ninji.
