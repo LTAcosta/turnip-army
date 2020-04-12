@@ -180,42 +180,53 @@ input {
   margin: 8px 0px;
 }
 
-input[type=number]:placeholder-shown {
+input[type=number]:placeholder-shown,
+input[type=text]:placeholder-shown {
   background: #f3f3f3;
 }
 
-input[type=number]:not(:placeholder-shown) {
+input[type=number]:not(:placeholder-shown),
+input[type=text]:not(:placeholder-shown) {
   background: transparent;
   color: #0AB5CD;
 }
 
-input[type=number]:placeholder-shown:hover {
+input[type=number]:placeholder-shown:hover,
+input[type=text]:placeholder-shown:hover {
   cursor: pointer;
   transform: scale(1.1);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.09);
 }
 
-input[type=number]:focus {
+input[type=number]:focus,
+input[type=text]:focus {
   outline: none;
   transform: scale(1.1);
   background: white;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.09);
 }
 
-input[type=number]:focus::placeholder {
+input[type=number]:focus::placeholder,
+input[type=text]:focus::placeholder {
   opacity: 0;
 }
 
-input[type=number] {
-  width: 60px;
+input[type=number],
+input[type=text] {
   text-align: center;
 }
 
-input[type=number]:disabled {
+input[type=number]{
+  width: 60px;
+}
+
+input[type=number]:disabled,
+input[type=text]:disabled {
   background: inherit;
 }
 
-input[type=number]:disabled:hover {
+input[type=number]:disabled:hover,
+input[type=text]:disabled:hover {
   box-shadow: none;
   transform: none;
   cursor: default;
@@ -227,7 +238,8 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type=number] {
+input[type=number],
+input[type=text] {
   -moz-appearance: textfield;
 }
 

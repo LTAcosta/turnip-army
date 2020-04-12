@@ -28,11 +28,83 @@
   <div class="dialog-box">
     <h2 class="dialog-box__name">Mr. Resetti</h2>
     <div>
-      <p id="login-status">
-      </p>
       <button id="login" class="reset-button" name="action">
           Login with Google
       </button>
+      <div id="login-status">
+        <p id="login-email"></p>
+
+        <button id="logout" class="reset-button" name="action">
+          Logout
+        </button>
+
+        <form id="profileForm" class="input__form">
+          <div class="form__flex-wrap">
+            <div class="form__row">
+              <div class="input__group">
+                <label for="profile_name">Name</label>
+                <input type="text" id="profile_name" placeholder="..." />
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="input__group">
+                <label for="profile_friendCode">Friend Code</label>
+                <input type="text" id="profile_friendCode" placeholder="0000-0000-0000" />
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="input__group">
+                <label for="profile_switchName">Switch Username</label>
+                <input type="text" id="profile_switchName" placeholder="..." />
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="input__group">
+                <label for="profile_playerName">In-Game Name</label>
+                <input type="text" id="profile_playerName" placeholder="..." />
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="input__group">
+                <label for="profile_islandName">Island Name</label>
+                <input type="text" id="profile_islandName" placeholder="..." />
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="input__group">
+                <label for="profile_fruit">Native Fruit</label>
+                <input type="text" id="profile_fruit" placeholder="..." />
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="input__group">
+                <label for="profile_flower">Native Flower</label>
+                <input type="text" id="profile_flower" placeholder="..." />
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="input__group">
+                <label for="profile_creatorId">Creator ID</label>
+                <input type="text" id="profile_creatorId" placeholder="0000-0000-0000" />
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="input__group">
+                <label for="profile_timezone">Timezone</label>
+                <input type="text" id="profile_timezone" placeholder="UTC" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 
@@ -41,7 +113,7 @@
 
     <div class="nook-phone-center">
 
-      <form class="input__form">
+      <form id="priceForm" class="input__form">
         <div class="form__row">
           <h6>First-Time Buyer</h6>
           <div class="input__group">
@@ -253,6 +325,7 @@
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
   <script src="js/predictions.js"></script>
   <script src="js/scripts.js"></script>
   <script src="js/turnipArmy.js"></script>

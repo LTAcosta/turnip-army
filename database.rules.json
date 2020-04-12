@@ -78,6 +78,14 @@
         }
       }
     },
+    "user-profiles": {
+      "$userId": {
+        // User metadata that can be read by team members
+        ".write": "(auth != null) && (auth.uid === $userId || (root.child('moderators').hasChild(auth.uid)))",
+        ".read": "(auth != null) && (auth.uid === $userId || (root.child('moderators').hasChild(auth.uid)))",
+        ".validate": "newData.hasChildren(['name','friendCode','switchName','playerName','islandName','fruit','flower','creatorId','timezone'])"
+      }
+    },
     "user-names-online": {
       // A mapping of active, online lowercase usernames to sessions and user ids.
       ".read": true,

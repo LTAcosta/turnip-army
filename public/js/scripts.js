@@ -73,7 +73,6 @@ const initialize = function () {
     } else {
       fillFields(prices, first_buy, previous_pattern)
     }
-    $(document).trigger("input");
   } catch (e) {
     console.error(e);
   }
@@ -201,5 +200,5 @@ const update = function () {
 }
 
 $(document).ready(initialize);
-$(document).on("input", update);
+$('#priceForm').on("input", update);
 $('input[type = radio]').on("change", update);
