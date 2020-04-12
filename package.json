@@ -1,0 +1,21 @@
+{
+  "name": "turnip-army",
+  "description": "A team based turnip price predictor for Animal Crossing",
+  "version": "0.0.1",
+  "author": "Lennon Acosta",
+  "homepage": "https://turnip.army/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LTAcosta/turnip-army.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LTAcosta/turnip-army/issues"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "firebase": "7.14.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "8.0.2"
+  }
+}
