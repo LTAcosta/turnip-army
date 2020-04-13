@@ -1,8 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    function database() {
-        return firebase.database().ref();
-    }
-    
     firebase.auth().onAuthStateChanged(function(user) {
         updateLoginStatus();
     });
@@ -111,7 +107,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         profileRef = firebase.database().ref('user-profiles/' + user.uid);
 
-        profileRef.on('value', function(profile) {
+        profileRef.on('value', function(data) {
+            if (!data) {
+                return;
+            }
+
+            var profile = data.val();
             if (!profile) {
                 return;
             }
