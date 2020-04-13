@@ -16,7 +16,8 @@ This project uses [Angular 9](https://angular.io/) and [Firebase](https://fireba
 - Install [Node.js](https://nodejs.org/) (8.9 or higher. Tested with 12.16.2)
 - Install Angular CLI. Run `npm install -g @angular/cli@9.1.1`
 - Install project dependencies. From this directory, run `npm install`
-- Copy the Firebase SDK snippet from console web app settings. Paste it into `src/environments/environments.ts`. This allows you to run locally and is not needed in the production environment.
+- Make a copy of `src/environments/environments.ts.example` as `src/environments/environments.ts`.
+- Copy the Firebase SDK snippet from console web app settings. Paste it into `src/environments/environments.ts`. This allows you to run locally and is not needed in the production environment. This file is gitignored to reduce the risk of checking in credentials.
 
 ### Build and run
 

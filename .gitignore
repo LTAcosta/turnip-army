@@ -48,3 +48,6 @@ Thumbs.db
 # Firebase
 /.firebase
 firebase-debug.log
+
+# Angular Environment - Don't want to leak Firebase credentials
+src/environments/environment.ts
