@@ -9,13 +9,14 @@ Based on the great work done by Ninji.
 
 ## Development
 
-This project uses Angular 9 and Firebase.
+This project uses [Angular 9](https://angular.io/) and [Firebase](https://firebase.google.com/docs/) with the help of [AngularFire](https://github.com/angular/angularfire) and [Angular Material UI](https://material.angular.io/).
 
 ### Setup
 
 - Install [Node.js](https://nodejs.org/) (8.9 or higher. Tested with 12.16.2)
 - Install Angular CLI. Run `npm install -g @angular/cli@9.1.1`
 - Install project dependencies. From this directory, run `npm install`
+- Copy the Firebase SDK snippet from console web app settings. Paste it into `src/environments/environments.ts`. This allows you to run locally and is not needed in the production environment.
 
 ### Build and run
 
