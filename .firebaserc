@@ -1,5 +1,11 @@
 {
-  "projects": {
-    "default": "turnip-army"
+  "targets": {
+    "turnip-army": {
+      "hosting": {
+        "turnip-army": [
+          "turnip-army"
+        ]
+      }
+    }
   }
 }
